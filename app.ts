@@ -1,6 +1,5 @@
-import express from 'express'
-import { port, whitelist } from './const';
-import { Request, Response } from 'express';
+const express = require('express')
+const { port, whitelist } = require('./const')
 export const app = express();
 
 const cors = require("cors")
@@ -19,10 +18,6 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 app.use('/movie', movieRoutes)
-
-app.use((request: Request, response: Response) => {
-    response.json({ message: 'Hey! This is your server response!' });
-});
 
 const server = app.listen(3333, function () {
     console.log("App is listening at port:", port)
