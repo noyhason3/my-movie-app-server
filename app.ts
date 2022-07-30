@@ -19,7 +19,7 @@ app.use(cors(corsOptions))
 
 app.use('/movie', movieRoutes)
 
-const server = app.listen(3333, function () {
+const server = app.listen(process.env.PORT || 3333, function () {
     console.log("App is listening at port:", port)
 })
 
