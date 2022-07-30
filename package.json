@@ -22,7 +22,7 @@
   "scripts": {
     "tsc": "./node_modules/typescript/bin/tsc",
     "postinstall": "npm run build",
-    "start": "node dist/app.js",
+    "start": "node app.js",
     "build": "tsc -b",
     "serve": "nodemon app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
