@@ -19,8 +19,8 @@ app.use(cors(corsOptions))
 
 app.use('/movie', movieRoutes)
 
-const server = app.listen(process.env.PORT || 3333, function () {
-    console.log("App is listening at port:", port)
+const server = app.listen(process.env.PORT || port, function () {
+    console.log("App is listening at port:", process.env.PORT || port)
 })
 
 module.exports = app;
