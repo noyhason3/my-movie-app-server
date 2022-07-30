@@ -1,6 +1,6 @@
-import express from 'express'
 import { port, whitelist } from './const';
 import { Request, Response } from 'express';
+const express = require('express')
 export const app = express();
 
 const cors = require("cors")
