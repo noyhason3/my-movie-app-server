@@ -3,7 +3,7 @@
       "baseUrl": "./",
       "module": "commonjs",
       "strict": true,
-      "outDir": "dist/.",
+      "outDir": "app/.",
       "target": "ES2019",
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
